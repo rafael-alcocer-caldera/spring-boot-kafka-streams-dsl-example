@@ -77,13 +77,17 @@ http://localhost:8089/kafka/producer
 </code></pre>
 
 2) Prints the messages in the console (this is the stream).
-- ##### valueClass=class net.sf.json.JSONObject
-- ##### key=null, ##### value={"nombre":"RAC13","apellido":"ALCOCER","edad":66,"fecha":"2000 - 11 - 08"}
+<pre><code>
+##### valueClass=class net.sf.json.JSONObject
+##### key=null, ##### value={"nombre":"RAC13","apellido":"ALCOCER","edad":66,"fecha":"2000 - 11 - 08"}
+</code></pre>
 
 3) And sends the messages to the "rac3-topic" (this is the Sink in the Topology).
 
 4) SPRING BOOT KAFKA CONSUMER EXAMPLE consumes the messages in "rac3-topic".
-- ##### JSONObject received: {"nombre":"RAC13","apellido":"ALCOCER","edad":66,"fecha":"2000 - 11 - 08"}
+<pre><code>
+##### JSONObject received: {"nombre":"RAC13","apellido":"ALCOCER","edad":66,"fecha":"2000 - 11 - 08"}
+</code></pre>
 
 ## License
 

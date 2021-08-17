@@ -61,6 +61,7 @@ RESPONSE
 
 ## EXECUTION
 1) This application consumes messages from "rac-topic" (this is the Source in the Topology) sent by the SPRING BOOT KAFKA PRODUCER EXAMPLE.
+<pre><code>
 POST
 http://localhost:8089/kafka/producer
 {
@@ -73,6 +74,7 @@ http://localhost:8089/kafka/producer
 		"fecha": "2000 - 11 - 08"
 	}
 }
+</code></pre>
 
 2) Prints the messages in the console (this is the stream).
 - ##### valueClass=class net.sf.json.JSONObject

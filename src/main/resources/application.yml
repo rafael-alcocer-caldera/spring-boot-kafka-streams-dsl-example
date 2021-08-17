@@ -1,0 +1,15 @@
+server:
+  port : 8087
+
+spring:
+   kafka:
+     streams:
+       dsl:
+         topology:
+           application-id: racApp
+           bootstrap-servers: localhost:9092
+           source-topic-name: rac-topic
+           sink-topic-name:  rac3-topic
+           auto-offset-reset-config: earliest
+           key-serializer: org.apache.kafka.common.serialization.Serdes
+           serde: rafael.alcocer.caldera.serde.CustomSerde

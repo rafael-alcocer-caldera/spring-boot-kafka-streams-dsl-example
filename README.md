@@ -61,6 +61,18 @@ RESPONSE
 
 ## EXECUTION
 1) This application consumes messages from "rac-topic" (this is the Source in the Topology) sent by the SPRING BOOT KAFKA PRODUCER EXAMPLE.
+POST
+http://localhost:8089/kafka/producer
+{
+	"id": "13",
+	"topicName": "rac-topic",
+	"json": {
+		"nombre": "RAC13",
+		"apellido": "ALCOCER",
+		"edad": 66,
+		"fecha": "2000 - 11 - 08"
+	}
+}
 
 2) Prints the messages in the console (this is the stream).
 - ##### valueClass=class net.sf.json.JSONObject
@@ -69,6 +81,7 @@ RESPONSE
 3) And sends the messages to the "rac3-topic" (this is the Sink in the Topology).
 
 4) SPRING BOOT KAFKA CONSUMER EXAMPLE consumes the messages in "rac3-topic".
+- ##### JSONObject received: {"nombre":"RAC13","apellido":"ALCOCER","edad":66,"fecha":"2000 - 11 - 08"}
 
 ## License
 
